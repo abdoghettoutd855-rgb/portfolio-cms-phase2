@@ -1,0 +1,42 @@
+/*
+ * cms-extra.css — additions only. stle.css is untouched.
+ * Every selector here targets markup that did not exist before (new project cards with a cover image,
+ * new article blocks, loading state). Existing elements keep their exact original styling.
+ */
+
+/* New project card with a cover image */
+.project-visual.visual-cover {
+  background: radial-gradient(ellipse at 50% 30%, #262a3d 0, #151824 55%, #0f1017 100%);
+}
+.project-visual.visual-cover > img.cms-cover {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+}
+.project-visual.visual-cover > .visual-tag {
+  z-index: 1; padding: 3px 7px; border-radius: 4px; background: rgba(10, 11, 16, .72);
+}
+
+/* Article body blocks that the original two pages do not use */
+.article-content .article-section h3 {
+  font: 600 1.05rem 'Space Grotesk', sans-serif; margin: 22px 0 10px; color: var(--text);
+}
+body.lang-ar .article-content .article-section h3 { font-family: 'Cairo', sans-serif; }
+.article-content .article-section ul,
+.article-content .article-section ol { margin: 0 0 16px; padding-inline-start: 22px; color: var(--muted); line-height: 1.9; }
+.article-content .article-section li { margin-bottom: 6px; }
+.article-content .article-section a { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; }
+.article-content .article-section blockquote {
+  margin: 0 0 16px; padding: 4px 18px; border-inline-start: 3px solid var(--purple); color: var(--muted);
+}
+.article-content .article-section code {
+  font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .88em; padding: 1px 5px;
+  border-radius: 4px; background: rgba(255, 255, 255, .07);
+}
+.article-content .cms-figure { margin: 6px 0 20px; }
+.article-content .cms-figure img { display: block; max-width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); }
+.article-content .cms-video { position: relative; margin: 6px 0 20px; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: #000; }
+.article-content .cms-video iframe,
+.article-content .cms-video video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* Dynamic article page (article.html) states */
+.cms-state { color: var(--muted); padding: 40px 0; line-height: 1.9; }
+.cms-state a { color: var(--cyan); }

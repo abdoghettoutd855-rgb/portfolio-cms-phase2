@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0b10">
+  <meta name="description" content="Article by Abdullah Ghettout.">
+  <title>Article | Abdullah Ghettout</title>
+  <link rel="icon" href="icons/source_n_15236(1).png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="stle.css">
+  <link rel="stylesheet" href="cms-extra.css">
+</head>
+<body class="article-page" data-cms-page="article-dynamic">
+  <header class="site-header">
+    <nav class="nav wrap article-nav" aria-label="Main navigation">
+      <a class="brand" href="index.html#home" aria-label="Back to Abdullah's portfolio">
+        <span class="brand-mark">A<span>G</span></span>
+        <span class="brand-name">ABDULLAH<span class="brand-dot">.</span></span>
+      </a>
+      <div class="article-nav-actions">
+        <button class="language-toggle" id="article-language" type="button" aria-label="Switch language to Arabic">العربية</button>
+        <a class="nav-cta" href="index.html#work"><span data-en="Back to portfolio" data-ar="العودة إلى معرض الأعمال">Back to portfolio</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </nav>
+  </header>
+  <main class="article-main wrap">
+    <a class="article-back" href="index.html#work"><i class="fa-solid fa-arrow-left"></i> <span data-en="Selected work" data-ar="الأعمال المختارة">Selected work</span></a>
+    <div class="cms-state" id="cms-state">Loading…<noscript> JavaScript is required to view this page.</noscript></div>
+    <header class="article-hero" data-cms-reveal hidden>
+      <p class="section-index"></p>
+      <h1></h1>
+      <p class="article-lead"></p>
+      <div class="article-status"><span class="status-dot"></span><span></span></div>
+    </header>
+    <div class="article-layout" data-cms-reveal hidden>
+      <aside class="article-aside">
+        <span class="aside-label" data-en="NOTES" data-ar="ملاحظات">NOTES</span>
+        <p></p>
+        <a href="index.html#contact"><span data-en="Discuss a project" data-ar="ناقش مشروعًا">Discuss a project</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </aside>
+      <article class="article-content"></article>
+    </div>
+    <footer class="article-footer">
+      <a class="button button-quiet" href="index.html#work"><i class="fa-solid fa-arrow-left"></i> <span data-en="Return to projects" data-ar="العودة إلى المشاريع">Return to projects</span></a>
+      <span>© <span id="article-year"></span> Abdullah Ghettout</span>
+    </footer>
+  </main>
+  <script src="js/supabase-config.js"></script>
+  <script src="js/cms-render.js"></script>
+  <script src="js/cms-loader.js"></script>
+</body>
+</html>

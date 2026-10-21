@@ -1,0 +1,39 @@
+# Netlify headers. GitHub Pages ignores this file (see README, 'Hosting notes').
+
+/
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-5y8/DAjp2YCaxsSz1dQT0z51VyCSnFdFTqGFS0OGTAA=' 'sha256-lNjYd01prxje28BU7ZEliUzr8mLDoTR+r9wDnW/d3o4='; connect-src 'self' https://*.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data: blob: https://*.supabase.co; media-src 'self' https://*.supabase.co; frame-src https://www.youtube-nocookie.com https://player.vimeo.com; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com
+
+/index.html
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-5y8/DAjp2YCaxsSz1dQT0z51VyCSnFdFTqGFS0OGTAA=' 'sha256-lNjYd01prxje28BU7ZEliUzr8mLDoTR+r9wDnW/d3o4='; connect-src 'self' https://*.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data: blob: https://*.supabase.co; media-src 'self' https://*.supabase.co; frame-src https://www.youtube-nocookie.com https://player.vimeo.com; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com
+
+/article.html
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-5y8/DAjp2YCaxsSz1dQT0z51VyCSnFdFTqGFS0OGTAA=' 'sha256-lNjYd01prxje28BU7ZEliUzr8mLDoTR+r9wDnW/d3o4='; connect-src 'self' https://*.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data: blob: https://*.supabase.co; media-src 'self' https://*.supabase.co; frame-src https://www.youtube-nocookie.com https://player.vimeo.com; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com
+
+/fashion-platform.html
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-5y8/DAjp2YCaxsSz1dQT0z51VyCSnFdFTqGFS0OGTAA=' 'sha256-lNjYd01prxje28BU7ZEliUzr8mLDoTR+r9wDnW/d3o4='; connect-src 'self' https://*.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data: blob: https://*.supabase.co; media-src 'self' https://*.supabase.co; frame-src https://www.youtube-nocookie.com https://player.vimeo.com; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com
+
+/ai-model.html
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-5y8/DAjp2YCaxsSz1dQT0z51VyCSnFdFTqGFS0OGTAA=' 'sha256-lNjYd01prxje28BU7ZEliUzr8mLDoTR+r9wDnW/d3o4='; connect-src 'self' https://*.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data: blob: https://*.supabase.co; media-src 'self' https://*.supabase.co; frame-src https://www.youtube-nocookie.com https://player.vimeo.com; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com
+
+/admin/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Content-Security-Policy: default-src 'self'; script-src 'self'; connect-src 'self' https://*.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data: blob: https://*.supabase.co; media-src 'self' https://*.supabase.co; frame-src https://www.youtube-nocookie.com https://player.vimeo.com; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-store

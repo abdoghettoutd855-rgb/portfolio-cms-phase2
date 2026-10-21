@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0b10">
+  <meta name="description" content="A research roadmap for investigating and developing a specialized virtual try-on system, with clear separation between planned work and verified results.">
+  <title>AI Virtual Try-On Research | Abdullah Ghettout</title>
+  <link rel="icon" href="icons/source_n_15236(1).png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="stle.css">
+  <link rel="stylesheet" href="cms-extra.css">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="nav wrap article-nav" aria-label="Main navigation">
+      <a class="brand" href="index.html#home" aria-label="Back to Abdullah's portfolio">
+        <span class="brand-mark">A<span>G</span></span>
+        <span class="brand-name">ABDULLAH<span class="brand-dot">.</span></span>
+      </a>
+      <div class="article-nav-actions">
+        <button class="language-toggle" id="article-language" type="button" aria-label="Switch language to Arabic">العربية</button>
+        <a class="nav-cta" href="index.html#work"><span data-en="Back to portfolio" data-ar="العودة إلى معرض الأعمال">Back to portfolio</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </nav>
+  </header>
+  <main data-cms-article="ai-model" class="article-main wrap">
+    <a class="article-back" href="index.html#work"><i class="fa-solid fa-arrow-left"></i> <span data-en="Selected work" data-ar="الأعمال المختارة">Selected work</span></a>
+    <header class="article-hero">
+      <p class="section-index" data-en="AI RESEARCH / TECHNICAL ROADMAP" data-ar="بحث الذكاء الاصطناعي / خارطة تقنية">AI RESEARCH / TECHNICAL ROADMAP</p>
+      <h1 data-en="AI Virtual Try-On Research" data-ar="بحث الذكاء الاصطناعي للتجربة الافتراضية">AI Virtual Try-On Research</h1>
+      <p class="article-lead" data-en="A research roadmap for investigating and developing a specialized virtual try-on system, with clear separation between planned work and verified results." data-ar="خارطة بحث لدراسة وتطوير نظام متخصص للتجربة الافتراضية، مع الفصل الواضح بين العمل المخطط له والنتائج المثبتة.">A research roadmap for investigating and developing a specialized virtual try-on system, with clear separation between planned work and verified results.</p>
+      <div class="article-status"><span class="status-dot"></span><span data-en="Concept stage · Research and planning" data-ar="مرحلة التصور · البحث والتخطيط">Concept stage · Research and planning</span></div>
+    </header>
+    <div class="article-layout">
+      <aside class="article-aside">
+        <span class="aside-label" data-en="PROJECT NOTES" data-ar="ملاحظات المشروع">PROJECT NOTES</span>
+        <p data-en="This page documents the current vision and planned work. It distinguishes goals from completed implementation." data-ar="توثق هذه الصفحة الرؤية الحالية والعمل المخطط له، وتفصل بين الأهداف المستقبلية وما تم تنفيذه فعليًا.">This page documents the current vision and planned work. It distinguishes goals from completed implementation.</p>
+        <a href="index.html#contact"><span data-en="Discuss a project" data-ar="ناقش مشروعًا">Discuss a project</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </aside>
+      <article class="article-content">
+        <section class="article-section">
+<h2 data-en="Research objective" data-ar="هدف البحث">Research objective</h2>
+<p data-en="The AI research track aims to investigate how a specialized virtual try-on system could generate a plausible image of a person wearing a selected garment while preserving important characteristics of the person and the clothing. The focus is not simply to generate an attractive fashion image; it is to retain garment identity and visual details well enough to support a useful shopping preview." data-ar="يهدف مسار البحث في الذكاء الاصطناعي إلى دراسة كيفية بناء نظام متخصص للتجربة الافتراضية يستطيع إنشاء صورة معقولة لشخص يرتدي قطعة ملابس محددة، مع الحفاظ على السمات المهمة للشخص والقطعة. فالهدف ليس إنتاج صورة أزياء جذابة فحسب، بل الحفاظ على هوية الملابس وتفاصيلها البصرية بدرجة تجعل المعاينة مفيدة للتسوق.">The AI research track aims to investigate how a specialized virtual try-on system could generate a plausible image of a person wearing a selected garment while preserving important characteristics of the person and the clothing. The focus is not simply to generate an attractive fashion image; it is to retain garment identity and visual details well enough to support a useful shopping preview.</p>
+</section><section class="article-section">
+<h2 data-en="Technical problem" data-ar="المشكلة التقنية">Technical problem</h2>
+<p data-en="A virtual try-on pipeline must handle differences in body pose, occlusion, garment shape, lighting, and image backgrounds. It must also balance visual realism with fidelity to the input garment. Common failure modes to investigate include altered logos or patterns, distorted sleeves, incorrect boundaries, changed body or facial features, and inconsistent results across different body poses." data-ar="يجب أن يتعامل مسار التجربة الافتراضية مع اختلاف وضعيات الجسم، وحجب أجزاء من الصورة، وشكل الملابس، والإضاءة، والخلفيات. كما يجب الموازنة بين الواقعية البصرية والوفاء لتفاصيل القطعة الأصلية. ومن الأخطاء التي ينبغي دراستها: تغيير الشعارات أو النقوش، وتشويه الأكمام، وحدود الملابس غير الصحيحة، وتغيير ملامح الوجه أو الجسم، وعدم اتساق النتائج بين وضعيات الجسم المختلفة.">A virtual try-on pipeline must handle differences in body pose, occlusion, garment shape, lighting, and image backgrounds. It must also balance visual realism with fidelity to the input garment. Common failure modes to investigate include altered logos or patterns, distorted sleeves, incorrect boundaries, changed body or facial features, and inconsistent results across different body poses.</p>
+</section><section class="article-section">
+<h2 data-en="Proposed research path" data-ar="مسار البحث المقترح">Proposed research path</h2>
+<p data-en="The intended path is to study established virtual try-on research and open-weight model families, reproduce a small baseline where feasible, and measure its strengths and limitations. Based on evidence, the project may adapt or fine-tune a suitable base model, develop preprocessing and garment-conditioning components, and build evaluation tools. Training a large generative model from random initialization is a separate, much more resource-intensive path and is not assumed to be the first milestone." data-ar="تتمثل الخطة في دراسة الأبحاث المعروفة في التجربة الافتراضية ونماذج الذكاء الاصطناعي ذات الأوزان المفتوحة، ثم إعادة تنفيذ نموذج أساسي صغير إن أمكن وقياس نقاط قوته وحدوده. وبناءً على الأدلة، قد يجري تكييف نموذج أساسي مناسب أو تدريبه الإضافي، وتطوير مكونات المعالجة المسبقة وربط الملابس، وبناء أدوات للتقييم. أما تدريب نموذج توليدي كبير من أوزان عشوائية فهو مسار مختلف وأكثر تكلفة بكثير، ولا يُفترض أن يكون أول مرحلة.">The intended path is to study established virtual try-on research and open-weight model families, reproduce a small baseline where feasible, and measure its strengths and limitations. Based on evidence, the project may adapt or fine-tune a suitable base model, develop preprocessing and garment-conditioning components, and build evaluation tools. Training a large generative model from random initialization is a separate, much more resource-intensive path and is not assumed to be the first milestone.</p>
+</section><section class="article-section">
+<h2 data-en="Skills and tools to learn" data-ar="المهارات والأدوات المطلوبة">Skills and tools to learn</h2>
+<p data-en="The research will require Python, linear algebra, probability and statistics, optimization fundamentals, PyTorch or a comparable deep-learning framework, image preprocessing, GPU-aware experimentation, and disciplined experiment tracking. Learning will be tied to specific project questions, with small reproducible tests before expensive training runs." data-ar="سيحتاج البحث إلى Python، والجبر الخطي، والاحتمالات والإحصاء، وأساسيات التحسين الرياضي، وإطار للتعلم العميق مثل PyTorch، ومعالجة الصور، وإجراء التجارب مع مراعاة موارد GPU، وتوثيق التجارب بطريقة منظمة. سيرتبط التعلم بأسئلة محددة من المشروع، مع اختبارات صغيرة قابلة لإعادة الإنتاج قبل تشغيل عمليات تدريب مكلفة.">The research will require Python, linear algebra, probability and statistics, optimization fundamentals, PyTorch or a comparable deep-learning framework, image preprocessing, GPU-aware experimentation, and disciplined experiment tracking. Learning will be tied to specific project questions, with small reproducible tests before expensive training runs.</p>
+</section><section class="article-section">
+<h2 data-en="Data and evaluation" data-ar="البيانات والتقييم">Data and evaluation</h2>
+<p data-en="Model quality depends on suitable, legally usable data and a clear evaluation protocol. The research plan must consider licensing, consent, data provenance, representation across different people and garments, and leakage between training and evaluation sets. Evaluation should combine technical measures with structured visual review of garment preservation, identity consistency, artifacts, and failure cases. No dataset or performance result is claimed until it has been selected and tested." data-ar="تعتمد جودة النموذج على بيانات مناسبة ومسموح باستخدامها قانونيًا، وعلى بروتوكول تقييم واضح. يجب مراعاة التراخيص والموافقات ومصدر البيانات وتمثيل أشخاص وملابس متنوعة ومنع تسرب البيانات بين التدريب والتقييم. وينبغي أن يجمع التقييم بين المقاييس التقنية والمراجعة البصرية المنظمة للحفاظ على تفاصيل الملابس واتساق الهوية والعيوب وحالات الفشل. لن ندّعي امتلاك مجموعة بيانات أو نتائج أداء قبل اختيارها واختبارها فعليًا.">Model quality depends on suitable, legally usable data and a clear evaluation protocol. The research plan must consider licensing, consent, data provenance, representation across different people and garments, and leakage between training and evaluation sets. Evaluation should combine technical measures with structured visual review of garment preservation, identity consistency, artifacts, and failure cases. No dataset or performance result is claimed until it has been selected and tested.</p>
+</section><section class="article-section">
+<h2 data-en="Deployment and cost" data-ar="التشغيل والتكلفة">Deployment and cost</h2>
+<p data-en="A model that works in a notebook is not automatically ready for customers. The system must be measured for inference cost, memory use, latency, concurrent requests, failure handling, and output moderation. A practical deployment may initially use limited access, queues, and usage caps while performance is measured. Privacy controls should define image access, storage duration, deletion, and logging from the beginning." data-ar="نجاح النموذج داخل بيئة تجريبية لا يعني أنه جاهز للعملاء تلقائيًا. يجب قياس تكلفة الاستدلال واستهلاك الذاكرة وزمن الاستجابة والطلبات المتزامنة ومعالجة الأعطال ومراجعة المخرجات. وقد يبدأ التشغيل العملي بوصول محدود وطوابير انتظار وحدود للاستخدام أثناء قياس الأداء. وينبغي تحديد صلاحيات الوصول إلى الصور ومدة التخزين والحذف والسجلات منذ البداية.">A model that works in a notebook is not automatically ready for customers. The system must be measured for inference cost, memory use, latency, concurrent requests, failure handling, and output moderation. A practical deployment may initially use limited access, queues, and usage caps while performance is measured. Privacy controls should define image access, storage duration, deletion, and logging from the beginning.</p>
+</section><section class="article-section">
+<h2 data-en="Milestones and status" data-ar="المراحل والحالة">Milestones and status</h2>
+<p data-en="Initial milestones are: survey the research landscape; run a baseline inference experiment; define a repeatable evaluation set; document failure modes; decide whether fine-tuning is justified; and estimate the cost of serving real users. This is a planned research program, not a statement that a proprietary model has already been trained. Progress claims will be added only when experiments produce verifiable results." data-ar="تشمل المراحل الأولية: مراجعة الأبحاث المتاحة، وتشغيل تجربة استدلال لنموذج أساسي، وتحديد مجموعة تقييم قابلة لإعادة الاستخدام، وتوثيق حالات الفشل، وتحديد ما إذا كان التدريب الإضافي مبررًا، وتقدير تكلفة خدمة المستخدمين فعليًا. هذا برنامج بحث مخطط له، وليس تصريحًا بأن نموذجًا خاصًا قد دُرّب بالفعل. لن تُضاف ادعاءات عن التقدم إلا عندما تنتج التجارب نتائج قابلة للتحقق.">Initial milestones are: survey the research landscape; run a baseline inference experiment; define a repeatable evaluation set; document failure modes; decide whether fine-tuning is justified; and estimate the cost of serving real users. This is a planned research program, not a statement that a proprietary model has already been trained. Progress claims will be added only when experiments produce verifiable results.</p>
+</section>
+      </article>
+    </div>
+    <footer class="article-footer">
+      <a class="button button-quiet" href="index.html#work"><i class="fa-solid fa-arrow-left"></i> <span data-en="Return to projects" data-ar="العودة إلى المشاريع">Return to projects</span></a>
+      <span>© <span id="article-year"></span> Abdullah Ghettout</span>
+    </footer>
+  </main>
+  <script>
+    const languageButton = document.getElementById('article-language');
+    let language = 'en';
+    function setArticleLanguage(nextLanguage) {
+      language = nextLanguage;
+      const isArabic = language === 'ar';
+      document.documentElement.lang = isArabic ? 'ar' : 'en';
+      document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
+      document.body.classList.toggle('lang-ar', isArabic);
+      document.querySelectorAll('[data-en][data-ar]').forEach((element) => {
+        element.textContent = isArabic ? element.dataset.ar : element.dataset.en;
+      });
+      languageButton.textContent = isArabic ? 'English' : 'العربية';
+      languageButton.setAttribute('aria-label', isArabic ? 'Switch language to English' : 'Switch language to Arabic');
+      document.title = (isArabic ? "بحث الذكاء الاصطناعي للتجربة الافتراضية" : "AI Virtual Try-On Research") + ' | Abdullah Ghettout';
+    }
+    languageButton.addEventListener('click', () => setArticleLanguage(language === 'en' ? 'ar' : 'en'));
+    document.getElementById('article-year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/supabase-config.js"></script>
+  <script src="js/cms-render.js"></script>
+  <script src="js/cms-loader.js"></script>
+</body>
+</html>
